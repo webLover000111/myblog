@@ -1,0 +1,19 @@
+#left{
+  float: left;
+  margin: 20px 20px 0 20px;
+  width:340px;
+}
+#right{
+  float: right;
+  width:calc(100vw - 400px);
+}
+.clearfix{
+  clear:both;
+}
+#right app-passages-item{
+  float: left;
+  margin: 20px 20px 0 0;
+}
+#content{
+  min-height:calc(100vh - 210px);
+}

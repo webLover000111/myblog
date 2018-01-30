@@ -1,0 +1,11 @@
+#sortContainer dl{
+  list-style: none;
+}
+#sortContainer dt{
+  font-size: 1.1rem;
+  font-weight: 600;
+
+}
+#sortContainer dd{
+  font-size: 0.8rem;
+}
