@@ -1,5 +1,5 @@
 <div>
-  <app-navbar></app-navbar>
+  <app-navbar [items]="navLinks"></app-navbar>
   <div id="content">
     <div id="left">
       <app-person-ino></app-person-ino>
@@ -7,15 +7,9 @@
       <app-sortfiles></app-sortfiles>
     </div>
     <div id="right">
-      <div id="newestPass">
-        <span class="itemTitle">最新文章</span>
-        <app-passages-item [items]="examples"></app-passages-item>
-      </div>
-      <div class="clearfix"></div>
-      <div id="hotPass">
-        <span class="itemTitle">热门文章</span>
-        <app-passages-item [items]="hotPassages"></app-passages-item>
-      </div>
+      <router-outlet>
+
+      </router-outlet>
     </div>
   </div>
   <div class="clearfix"></div>

@@ -10,25 +10,6 @@
 .clearfix{
   clear:both;
 }
-#right app-passages-item{
-  float: left;
-}
-#right .itemTitle{
-  display: inline-block;
-  height: 30px;
-  width: 120px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 30px;
-  color: #fff;
-  padding: 0 0 0 8px;
-  -webkit-border-radius: 8px 15px 15px 8px;
-  -moz-border-radius: 8px 15px 15px 8px;
-  border-radius: 8px 15px 15px 8px;
-  box-shadow: #eee 3px 3px;
-  background: #558eff;
-  margin: 20px 0 0 0;
-}
 #content{
   min-height:calc(100vh - 210px);
 }

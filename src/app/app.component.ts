@@ -1,5 +1,6 @@
 import {Component, Inject} from '@angular/core';
-import { PassExample } from './testmodule/passage.model';
+import {Router} from '@angular/router';
+import {NavRoute} from './testmodule/route.model';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { PassExample } from './testmodule/passage.model';
 })
 export class AppComponent {
   constructor(
-    @Inject('PassExamples') public examples: PassExample[],
-    @Inject('PassExamples') public hotPassages: PassExample[]) {
+    private router: Router,
+    @Inject('NavLinks') public navLinks: NavRoute[]) {
   }
 }
