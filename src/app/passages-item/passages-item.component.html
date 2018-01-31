@@ -1,5 +1,6 @@
-<div class="passItem">
-  <span class="passTitle"></span><span class="read"><img src="" alt=""><span id="aa">1000</span></span>
-  <article class="shortInfo"></article>
-  <span class="tagContainter"><span>JS</span></span><span class="passTime" id="bb">18-01-29</span>
+<div id="passagesItem">
+  <app-passage
+      [item]="item"
+      *ngFor="let item of items">
+    </app-passage>
 </div>

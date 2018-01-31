@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import { PassExample} from '../testmodule/passage.model';
 
 @Component({
   selector: 'app-passages-item',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./passages-item.component.css']
 })
 export class PassagesItemComponent implements OnInit {
-
+  @Input('items') items: PassExample[];
   constructor() { }
 
   ngOnInit() {

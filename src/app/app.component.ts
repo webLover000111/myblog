@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Inject} from '@angular/core';
+import { PassExample } from './testmodule/passage.model';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  constructor(
+    @Inject('PassExamples') public examples: PassExample[],
+    @Inject('PassExamples') public hotPassages: PassExample[]) {
+  }
 }
