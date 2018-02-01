@@ -13,7 +13,7 @@ import { PassExample } from './testmodule/passage.model';
 import { NavRoute } from './testmodule/route.model';
 
 import {RouterModule, Routes} from '@angular/router';
-import { WholePassageComponent } from './whole-passage/whole-passage.component';
+import {WholePassageComponent } from './whole-passage/whole-passage.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { FrontendComponent } from './frontend/frontend.component';
 import { BackendComponent } from './backend/backend.component';
@@ -23,7 +23,10 @@ import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
 import { PassageListComponent } from './passage-list/passage-list.component';
 import {PassageList} from './testmodule/passageList.model';
-
+// import {
+//   routes as childRoutes,
+//   WholePassageModule
+// } from './whole-passage/whole-passage.module';
 
 export const examples: PassExample[] = [
   { id: "1", title: "haha", numbers: 1, shortInfo: "haha", tags: ['JS','HTML5'], timeId: "11", passTime: "2018-01-01"},
@@ -36,25 +39,25 @@ export const hotPassages: PassExample[] = [
   { id: "6", title: "haha3", numbers: 3, shortInfo: "haha3" ,tags: ['JS','HTML5'], timeId: "77", passTime: "2018-01-01"},
 ];
 export const othersPassages: PassageList[] = [
-  {title: 'Linux从入门到精通',numbers: 3, passTime: '2018-01-01'},
-  {title: 'Linux从入门到精通1',numbers: 4, passTime: '2018-01-02'},
-  {title: 'Linux从入门到精通2',numbers: 30, passTime: '2018-01-03'},
-  {title: 'Linux从入门到精通3',numbers: 300, passTime: '2018-01-04'},
-  {title: 'Linux从入门到精通4',numbers: 3000, passTime: '2018-01-05'}
+  {id: "4", title: 'Linux从入门到精通',numbers: 3, passTime: '2018-01-01'},
+  {id: "4", title: 'Linux从入门到精通1',numbers: 4, passTime: '2018-01-02'},
+  {id: "4", title: 'Linux从入门到精通2',numbers: 30, passTime: '2018-01-03'},
+  {id: "4", title: 'Linux从入门到精通3',numbers: 300, passTime: '2018-01-04'},
+  {id: "4", title: 'Linux从入门到精通4',numbers: 3000, passTime: '2018-01-05'}
 ];
 export const frontendPassages: PassageList[] = [
-  {title: 'CSS从入门到精通',numbers: 3, passTime: '2018-01-01'},
-  {title: 'CSS从入门到精通1',numbers: 4, passTime: '2018-01-02'},
-  {title: 'CSS从入门到精通2',numbers: 30, passTime: '2018-01-03'},
-  {title: 'CSS从入门到精通3',numbers: 300, passTime: '2018-01-04'},
-  {title: 'CSS从入门到精通4',numbers: 3000, passTime: '2018-01-05'}
+  { id: "6", title: 'CSS从入门到精通',numbers: 3, passTime: '2018-01-01'},
+  { id: "6", title: 'CSS从入门到精通1',numbers: 4, passTime: '2018-01-02'},
+  { id: "6", title: 'CSS从入门到精通2',numbers: 30, passTime: '2018-01-03'},
+  { id: "6", title: 'CSS从入门到精通3',numbers: 300, passTime: '2018-01-04'},
+  { id: "6", title: 'CSS从入门到精通4',numbers: 3000, passTime: '2018-01-05'}
 ];
 export const backendPassages: PassageList[] = [
-  {title: 'node从入门到精通',numbers: 3, passTime: '2018-01-01'},
-  {title: 'node从入门到精通1',numbers: 4, passTime: '2018-01-02'},
-  {title: 'node从入门到精通2',numbers: 30, passTime: '2018-01-03'},
-  {title: 'node从入门到精通3',numbers: 300, passTime: '2018-01-04'},
-  {title: 'node从入门到精通4',numbers: 3000, passTime: '2018-01-05'}
+  {id: "6", title: 'node从入门到精通',numbers: 3, passTime: '2018-01-01'},
+  {id: "6", title: 'node从入门到精通1',numbers: 4, passTime: '2018-01-02'},
+  {id: "6", title: 'node从入门到精通2',numbers: 30, passTime: '2018-01-03'},
+  {id: "6", title: 'node从入门到精通3',numbers: 300, passTime: '2018-01-04'},
+  {id: "6", title: 'node从入门到精通4',numbers: 3000, passTime: '2018-01-05'}
 ];
 
 export const navLinks: NavRoute[] = [
@@ -70,6 +73,23 @@ const routes: Routes = [
   { path: 'frontend', component: FrontendComponent, pathMatch: 'full' },
   { path: 'backend', component: BackendComponent, pathMatch: 'full' },
   { path: 'others', component: OthersComponent, pathMatch: 'full' },
+  { path: 'passages', redirectTo: '', pathMatch: 'full'},
+  {
+    path: 'passages/:id',
+    component: WholePassageComponent
+  },
+  {
+    path: 'frontend/passages/:id',
+    component: WholePassageComponent
+  },
+  {
+    path: 'backend/passages/:id',
+    component: WholePassageComponent
+  },
+  {
+    path: 'others/passages/:id',
+    component: WholePassageComponent
+  }
 ];
 
 
@@ -82,8 +102,8 @@ const routes: Routes = [
     SortfilesComponent,
     FooterComponent,
     PassagesItemComponent,
-    PassageComponent,
     WholePassageComponent,
+    PassageComponent,
     MainPageComponent,
     FrontendComponent,
     BackendComponent,
@@ -94,7 +114,7 @@ const routes: Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes),
-    BrowserModule
+    BrowserModule,
   ],
   providers: [
     { provide: 'PassExamples',    useValue: examples },
