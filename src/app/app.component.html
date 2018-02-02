@@ -1,5 +1,5 @@
-<div>
-  <app-navbar [items]="navLinks"></app-navbar>
+<div class="mainApp">
+  <app-navbar [items]="navLinks" (userLog)="logHandler($event)"></app-navbar>
   <div id="content">
     <div id="left">
       <app-person-ino></app-person-ino>
@@ -7,11 +7,19 @@
       <app-sortfiles></app-sortfiles>
     </div>
     <div id="right">
-      <router-outlet>
-
-      </router-outlet>
+      <router-outlet></router-outlet>
     </div>
   </div>
   <div class="clearfix"></div>
   <app-footer></app-footer>
+  <app-user-log [log]="log" (clickMask)="clickMaskHandler($event)"></app-user-log>
 </div>
+
+
+
+
+
+
+
+
+

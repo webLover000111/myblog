@@ -23,6 +23,9 @@ import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
 import { PassageListComponent } from './passage-list/passage-list.component';
 import {PassageList} from './testmodule/passageList.model';
+import { UserLogComponent } from './user-log/user-log.component';
+import { LoginComponent } from './login/login.component';
+import { LogupComponent } from './logup/logup.component';
 // import {
 //   routes as childRoutes,
 //   WholePassageModule
@@ -108,7 +111,10 @@ const routes: Routes = [
     FrontendComponent,
     BackendComponent,
     OthersComponent,
-    PassageListComponent
+    PassageListComponent,
+    UserLogComponent,
+    LoginComponent,
+    LogupComponent
   ],
   imports: [
     FormsModule,

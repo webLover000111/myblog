@@ -13,3 +13,8 @@
 #content{
   min-height:calc(100vh - 210px);
 }
+.hide{
+  display: none;
+}
+
+
