@@ -1,0 +1,7 @@
+<div class="passage" (click)="goToPassage(item.id)">
+<div class="wrap">
+  <span class="passTitle">{{item.title}}</span><span class="read"><img src="../../assets/images/eyes.png" alt="eyes"><span id="[item.id]" class="numbers">{{item.numbers}}</span></span>
+  <article class="shortInfo">{{item.shortInfo}}</article>
+</div>
+  <span class="tagContainter"><span *ngFor="let tag of item.tags" class="tag">{{tag}}</span></span><span class="passTime" id="[item.timeId]">{{item.passTime}}</span>
+</div>

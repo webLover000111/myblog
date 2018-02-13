@@ -1,0 +1,5 @@
+<div [ngClass]="{hide: isClick()}" class="userLog">
+  <div class="mask" (click)="isClickMask($event)"></div>
+  <app-login [ngClass]="{hide: !isLogin()}" (logup)="logupHandler($event)"></app-login>
+  <app-logup [ngClass]="{hide: !isLogup()}" (login)="loginHandler($event)"></app-logup>
+</div>

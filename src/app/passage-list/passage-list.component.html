@@ -1,0 +1,10 @@
+<div class="passageList">
+  <span class="sort" (click)="byTime()"><img src="../../assets/images/clock.png" alt="clock"><span>按时间</span></span><span class="sort" (click)="byNumbers()"> <img src="../../assets/images/hot.png" alt=""><span>按热度</span></span>
+  <div class="clearfix"></div>
+  <ul>
+    <li *ngFor="let item of items" (click)="goToPassage(item.id)"><p>{{item.title}}</p>
+    <span>{{item.numbers}}</span><span>Release: {{item.passTime}}</span>
+    </li>
+  </ul>
+  <div class="clearfix"></div>
+</div>

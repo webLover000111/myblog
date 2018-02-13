@@ -1,0 +1,112 @@
+.logup{
+  -webkit-border-radius: 25px 0 25px 0;
+  -moz-border-radius: 25px 0 25px 0;
+  border-radius: 25px 0 25px 0;
+  box-shadow: #696969 4px 4px;
+  height: 500px;
+  width: 360px;
+  background: #fff;
+}
+.logup form{
+  display: block;
+  width: 360px;
+  height: auto;
+  padding: 30px 0 0 0;
+}
+.logup section{
+  margin: 15px auto 0 auto;
+  height: auto;
+  width: 360px;
+}
+.logup input[type=text],.logup input[type=password]{
+  display: block;
+  margin: 0 auto;
+  height: 24px;
+  width: 280px;
+  padding: 10px 4px;
+  line-height: 24px;
+  font-size: 16px;
+  border: #535353 2px solid;
+  outline: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.logup input[type=checkbox]{
+  margin: 0 0 0 116px;
+}
+.logup p{
+  margin: 8px 0 0 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+.logup a{
+  text-decoration: none;
+  color: #343135;
+}
+.logup a:hover{
+  text-decoration:underline;
+  color: #8c89ff;
+  cursor: pointer;
+}
+.logup button{
+  display: block;
+  width: 60px;
+  height: 36px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  background: #77ff8e;
+  color: #333;
+}
+.logup button:hover{
+  color:#f3f3f3;
+  cursor: pointer;
+}
+.warn{
+  margin: 6px 0 0 0;
+  font-size: 12px;
+  color: #ff0502;
+  line-height: 16px;
+  padding: 0 0 0 40px;
+}
+#service{
+  position: fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width: 100%;
+  z-index: 2000;
+}
+#service article{
+  padding: 20px 20px 20px 20px;
+  background: rgba(137,137,137,0.8);
+  margin: 70px auto 50px auto;
+  width: 460px;
+  height: 480px;
+  color: #fafaf3;
+  font-size: 18px;
+  line-height: 24px;
+}
+#close{
+  font-size: 20px;
+  color:#fff;
+  float: right;
+  margin: -16px -12px 0 0;
+}
+#close:hover{
+  color: #faf80c;
+  cursor: pointer;
+}
+.hide{
+  display: none;
+}

@@ -1,0 +1,71 @@
+.passageList{
+  width: auto;
+  height: auto;
+}
+.passageList li:hover{
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 0px 10px #999;
+  -moz-box-shadow: inset 0px 0px 10px #999;
+  box-shadow: inset 0px 0px 10px #999;
+}
+.passageList .sort{
+  display: block;
+  float: left;
+  height: 30px;
+  width: 70px;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  margin: 20px 0 0 20px;
+}
+.passageList ul{
+  list-style: none;
+  height: auto;
+  width: auto;
+  margin: 0 0;
+  padding: 0 0;
+}
+.passageList li{
+  display: block;
+  float: left;
+  margin: 16px 16px 0 0;
+  height: 54px;
+  width: 420px;
+  border: #96c4ff 1px solid;
+  box-shadow: #a49ca8 2px 2px;
+}
+.passageList li p{
+  margin: 8px 0 0 0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 550;
+}
+.passageList li span{
+  display: block;
+  min-width: 40px;
+  margin: 0 8px 8px 0;
+  float: right;
+  height: 24px;
+  font-size: 10px;
+  line-height: 24px;
+  text-align: center;
+  color: #625c63;
+}
+.clearfix{
+  clear: both;
+}
+.sort:hover{
+  cursor: pointer;
+  color: #9c9bfa;
+  text-decoration: underline;
+}
+.sort img{
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+}
+.sort span{
+  padding: 0 0 0 4px;
+  vertical-align: middle;
+}

@@ -1,0 +1,27 @@
+.mask{
+  height: 100%;
+  width: 100%;
+  background: rgba(50,50,50,0.3);
+  position: fixed;
+  z-index: 100;
+  top:0;
+  left: 0;
+}
+.hide{
+  display: none;
+}
+app-login{
+  z-index: 1000;
+  margin: 0 auto;
+  position: fixed;
+  top: calc( (100vh - 380px) / 2);
+  left: calc( (100vw - 360px) / 2);
+}
+app-logup{
+  z-index: 1000;
+  margin: 0 auto;
+  position: fixed;
+  top: calc( (100vh - 500px) / 2);
+  left: calc( (100vw - 360px) / 2);
+}
+

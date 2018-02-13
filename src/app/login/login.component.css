@@ -1,0 +1,77 @@
+.login{
+  -webkit-border-radius: 0 25px 0 25px;
+  -moz-border-radius: 0 25px 0 25px;
+  border-radius: 0 25px 0 25px;
+ box-shadow: #696969 4px 4px;
+  height: 380px;
+  width: 360px;
+  background: #fff;
+}
+.login form{
+  display: block;
+  width: 360px;
+  height: auto;
+  padding: 50px 0 0 0;
+}
+.login section{
+  margin: 30px auto 0 auto;
+  height: auto;
+  width: 360px;
+}
+.login input{
+  display: block;
+  margin: 0 auto;
+  height: 24px;
+  width: 280px;
+  padding: 10px 4px;
+  line-height: 24px;
+  font-size: 16px;
+  border: #535353 2px solid;
+  outline: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+}
+.login p{
+  margin: 0 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+.login p a{
+  text-decoration: none;
+  color: #343135;
+}
+.login p a:hover{
+  text-decoration:underline;
+  color: #8c89ff;
+  cursor: pointer;
+}
+.login button{
+  display: block;
+  width: 60px;
+  height: 36px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  background: #77ff8e;
+  color: #333;
+}
+.login button:hover{
+  color:#f3f3f3;
+  cursor: pointer;
+}
+.warn{
+  margin: 6px 0 0 0;
+  font-size: 12px;
+  color: #ff0502;
+  line-height: 16px;
+  padding: 0 0 0 40px;
+}

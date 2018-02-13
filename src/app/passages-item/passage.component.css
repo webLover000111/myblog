@@ -1,0 +1,75 @@
+.passage{
+  height:160px;
+  width:420px;
+  margin: 20px 20px 0 0;
+  border: #cbcdff 1px solid;
+  -webkit-border-radius: 12px 12px 0 0;
+  -moz-border-radius: 12px 12px 0 0;
+  border-radius: 12px 12px 0 0;
+  box-shadow: #999 4px 4px;
+}
+.passage:hover{
+  cursor: pointer;
+ -webkit-box-shadow: inset 0px 0px 10px #999;
+  -moz-box-shadow: inset 0px 0px 10px #999;
+  box-shadow: inset 0px 0px 10px #999;
+}
+.wrap{
+  height:124px;
+}
+.wrap img{
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+.passage .passTitle{
+  padding: 8px 0 0 4px;
+  width: 350px;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.passage .numbers{
+  color:#444;
+  font-size: 12px;
+  vertical-align: middle;
+  padding: 0 0 0 4px;
+}
+.passage .read{
+  float: right;
+  display: inline-block;
+  padding: 8px 8px 0 0;
+}
+.passage .shortInfo{
+  height: auto;
+  padding: 8px 8px 0 8px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.passage .tag{
+  display: inline-block;
+  float: left;
+  margin: 8px 0 8px 8px;
+  height: 20px;
+  width: 50px;
+  text-align: center;
+  font-size:10px;
+  line-height: 20px;
+  color: #fff;
+  padding: 0 2px;
+  background: #48ff3f;
+  border: 1px solid #A3CDE0;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+}
+.passage .passTime{
+  float: right;
+  padding: 16px 8px 0 0;
+  font-size: 12px;
+  color: #444444;
+}
