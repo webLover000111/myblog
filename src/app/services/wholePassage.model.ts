@@ -1,4 +1,4 @@
-export interface WholePassage {
+export interface WholePassage{
   id: string;
   title: string;
   statement: string;

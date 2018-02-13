@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { PassExample} from '../testmodule/passage.model';
+import { PassExample} from '../services/passage.model';
 
 @Component({
   selector: 'app-passages-item',

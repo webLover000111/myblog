@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {NavRoute} from '../testmodule/route.model';
+import {NavRoute} from '../services/route.model';
 import {ActivatedRoute, Router} from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -10,12 +10,11 @@ import { Location } from '@angular/common';
 })
 export class NavbarComponent implements OnInit {
   @Input('items') items: NavRoute[];
-  @Input()
   @Output() userLog: EventEmitter<string> = new EventEmitter();
   constructor(private router: Router,
               private route: ActivatedRoute,
               private location: Location) { }
-  // Checks if this current example is the selected one
+  
   isActive(i): boolean {
     return `${this.items[i].path}` === this.location.path();
   }

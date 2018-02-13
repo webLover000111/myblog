@@ -9,8 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { PassagesItemComponent } from './passages-item/passages-item.component';
 import { PassageComponent } from './passages-item/passage.component';
 
-import { PassExample } from './testmodule/passage.model';
-import { NavRoute } from './testmodule/route.model';
+
+import { NavRoute } from './services/route.model';
 
 import {RouterModule, Routes} from '@angular/router';
 import {WholePassageComponent } from './whole-passage/whole-passage.component';
@@ -20,17 +20,18 @@ import { BackendComponent } from './backend/backend.component';
 import { OthersComponent } from './others/others.component';
 import {APP_BASE_HREF, HashLocationStrategy, LocationStrategy} from '@angular/common';
 import {HttpModule} from '@angular/http';
-import {FormsModule} from '@angular/forms';
+import {FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { PassageListComponent } from './passage-list/passage-list.component';
-import {PassageList} from './testmodule/passageList.model';
+import {PassageList} from './services/passageList.model';
 import { UserLogComponent } from './user-log/user-log.component';
 import { LoginComponent } from './login/login.component';
 import { LogupComponent } from './logup/logup.component';
+
 // import {
 //   routes as childRoutes,
 //   WholePassageModule
 // } from './whole-passage/whole-passage.module';
-
+/*
 export const examples: PassExample[] = [
   { id: "1", title: "haha", numbers: 1, shortInfo: "haha", tags: ['JS','HTML5'], timeId: "11", passTime: "2018-01-01"},
   { id: "2", title: "haha2", numbers: 2, shortInfo: "haha2", tags: ['JS','HTML5'], timeId: "22", passTime: "2018-01-01" },
@@ -40,7 +41,10 @@ export const hotPassages: PassExample[] = [
   { id: "4", title: "haha", numbers: 1, shortInfo: "haha", tags: ['JS','HTML5'], timeId: "55", passTime: "2018-01-01" },
   { id: "5", title: "haha2", numbers: 2, shortInfo: "haha2", tags: ['JS','HTML5'], timeId: "66", passTime: "2018-01-01"},
   { id: "6", title: "haha3", numbers: 3, shortInfo: "haha3" ,tags: ['JS','HTML5'], timeId: "77", passTime: "2018-01-01"},
-];
+];*/
+
+
+
 export const othersPassages: PassageList[] = [
   {id: "4", title: 'Linux从入门到精通',numbers: 3, passTime: '2018-01-01'},
   {id: "4", title: 'Linux从入门到精通1',numbers: 4, passTime: '2018-01-02'},
@@ -65,18 +69,19 @@ export const backendPassages: PassageList[] = [
 
 export const navLinks: NavRoute[] = [
   {label: '首页', name: 'Root', path: '', component: MainPageComponent},
-  {label: 'Frontend文章', name: 'Frontend', path: 'frontend', component: FrontendComponent},
-  {label: 'Backend文章', name: 'Backend', path: 'backend', component: BackendComponent},
-  {label: '杂谈文章', name: 'Others', path: 'others', component: OthersComponent},
+  {label: 'Frontend文章', name: 'Frontend', path: 'variety/frontend', component: FrontendComponent},
+  {label: 'Backend文章', name: 'Backend', path: 'variety/backend', component: BackendComponent},
+  {label: '杂谈文章', name: 'Others', path: 'variety/others', component: OthersComponent},
 ];
 
 
 const routes: Routes = [
   { path: '', component: MainPageComponent, pathMatch: 'full' },
-  { path: 'frontend', component: FrontendComponent, pathMatch: 'full' },
-  { path: 'backend', component: BackendComponent, pathMatch: 'full' },
-  { path: 'others', component: OthersComponent, pathMatch: 'full' },
+  { path: 'variety/frontend', component: FrontendComponent, pathMatch: 'full' },
+  { path: 'variety/backend', component: BackendComponent, pathMatch: 'full' },
+  { path: 'variety/others', component: OthersComponent, pathMatch: 'full' },
   { path: 'passages', redirectTo: '', pathMatch: 'full'},
+  { path: 'variety', redirectTo: '', pathMatch: 'full'},
   {
     path: 'passages/:id',
     component: WholePassageComponent
@@ -119,15 +124,16 @@ const routes: Routes = [
   imports: [
     FormsModule,
     HttpModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes),
     BrowserModule,
   ],
   providers: [
-    { provide: 'PassExamples',    useValue: examples },
-    { provide: 'PassExamples',    useValue: hotPassages },
-    { provide: 'OthersLists',    useValue: othersPassages },
+    /*{ provide: 'PassExamples',    useValue: examples },
+    { provide: 'PassExamples',    useValue: hotPassages },*/
+    /*{ provide: 'OthersLists',    useValue: othersPassages },
     { provide: 'FrontendLists',    useValue: frontendPassages },
-    { provide: 'BackendLists',    useValue: backendPassages },
+    { provide: 'BackendLists',    useValue: backendPassages },*/
     { provide: APP_BASE_HREF,    useValue: '/' },
     { provide: 'NavLinks',    useValue: navLinks },
     { provide: LocationStrategy, useClass: HashLocationStrategy }

@@ -1,9 +1,6 @@
-import {Component, Inject, Output, ViewChild} from '@angular/core';
+import {Component, Inject, Output} from '@angular/core';
 import {Router} from '@angular/router';
-import {NavRoute} from './testmodule/route.model';
-import {UserLogComponent} from './user-log/user-log.component';
-import {LoginComponent} from './login/login.component';
-import {LogupComponent} from './logup/logup.component';
+import {NavRoute} from './services/route.model';
 
 
 @Component({
@@ -16,7 +13,7 @@ export class AppComponent {
   logHandler(event: string) {
     this.log = event;
   }
-  clickMaskHandler(event: string) {
+  clickMaskHandler() {
     this.log = null;
   }
   constructor(
