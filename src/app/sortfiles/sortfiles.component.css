@@ -2,11 +2,11 @@
   list-style: none;
 }
 #sortContainer dt{
-  font-size: 1.1rem;
+  font-size: 16px;
   font-weight: 600;
 
 }
 #sortContainer dd{
-  font-size: 0.8rem;
+  font-size: 14px;
   padding: 8px 0 0 0;
 }
