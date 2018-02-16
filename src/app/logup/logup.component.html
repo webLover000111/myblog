@@ -1,52 +1,52 @@
 <div class="logup">
-  <form [formGroup]="formModel" (submit)="onSubmit()">
+  <form [formGroup]="formModel">
     <section>
       <input formControlName="email" type="text" placeholder="邮箱:">
       <div [hidden]="formModel.get('email').valid || formModel.get('email').untouched ">
-         <div [hidden]="!formModel.hasError('email','email')" class="warn">不是有效邮箱格式!</div>
+         <div [hidden]="!formModel.hasError('email',['email'])" class="warn">不是有效邮箱格式!</div>
       </div>
     </section>
     <section>
       <input formControlName="name" type="text" placeholder="用户名:">
       <div [hidden]="formModel.get('name').valid || formModel.get('name').untouched ">
-          <div [hidden]="!formModel.hasError('required','name')" class="warn">用户名不能为空!</div>
-         <div [hidden]="!formModel.hasError('minlength','name')" class="warn">用户名最小长度为6!</div>
-         <div [hidden]="!formModel.hasError('maxlength','name')" class="warn">用户名最长长度为20!</div>
+          <div [hidden]="!formModel.hasError('required',['name'])" class="warn">用户名不能为空!</div>
+         <div [hidden]="!formModel.hasError('minlength',['name'])" class="warn">用户名最小长度为6!</div>
+         <div [hidden]="!formModel.hasError('maxlength',['name'])" class="warn">用户名最长长度为20!</div>
       </div>
     </section>
     <div formGroupName="pwdGroup">
       <section>
         <input formControlName="password" type="password" placeholder="密码:">
-        <div [hidden]="formModel.controls['pwdGroup'].controls['password'].valid || formModel.controls['pwdGroup'].controls['password'].untouched ">
+        <div [hidden]="formModel['controls'].pwdGroup['controls'].password.valid || formModel['controls'].pwdGroup['controls'].password.untouched ">
         <div [hidden]="!formModel.hasError('password',['pwdGroup','password'])" class="warn">最小长度为8包含至少一个数字和一个大小写字母!</div>
         </div>
       </section>
       <section>
         <input formControlName="pwdConfig" type="password" placeholder="密码验证:">
-        <div [hidden]="formModel.controls['pwdGroup'].valid || formModel.hasError('password',['pwdGroup','password']) ">
+        <div [hidden]="formModel['controls'].pwdGroup.valid || formModel.hasError('password',['pwdGroup','password']) ">
          <div [hidden]="!formModel.hasError('required',['pwdGroup','pwdGroup'])" class="warn">请再次输入密码!!</div>
-         <div [hidden]="formModel.controls['pwdGroup'].valid || formModel.controls['pwdGroup'].controls['pwdConfig'].untouched ">
-         <div [hidden]="!formModel.hasError('equal','pwdGroup')" class="warn">两次输入密码不一致!</div>
+         <div [hidden]="formModel['controls'].pwdGroup.valid || formModel['controls'].pwdGroup['controls'].pwdConfig.untouched ">
+         <div [hidden]="!formModel.hasError('equal',['pwdGroup'])" class="warn">两次输入密码不一致!</div>
          </div>
         </div>
     </section>
     </div>
     <section>
     <section>
-      <input type="checkbox" formControlName="check">我同意<span (click)="clickService($event)"><a><strong>服务协议</strong></a></span>
-      <div [hidden]="formModel.get('check').valid || formModel.get('check').untouched ">
-         <div [hidden]="!formModel.hasError('check','check')" class="warn" checked="">必须同意服务协议才能够注册!</div>
+      <input type="checkbox" formControlName="check">我同意<span (click)="clickService()"><a><strong>服务协议</strong></a></span>
+      <div [hidden]="formModel.get('check').valid || formModel.get('check').untouched">
+         <div [hidden]="!formModel.hasError('check',['check'])" class="warn">必须同意服务协议才能够注册!</div>
       </div>
     </section>
-      <p><span>已经有帐号?</span><span>=><a (click)="isLogin($event)">去登录</a></span></p>
+      <p><span>已经有帐号?</span><span>=><a (click)="isLogin()">去登录</a></span></p>
     </section>
     <section>
-      <button type="submit">注册</button>
+      <button type="button" (click)="onSubmit()">注册</button>
     </section>
 </form>
 <div id="service" [ngClass]="{hide: isHide()}">
 <article>
-<span id="close" (click)="close($event)">X</span>
+<span id="close" (click)="close()">X</span>
 <div>
       1.kakakksakskdkakskd<br>
       2.sadfsdfsfsdfsddddddddddddddddddddddd<br>

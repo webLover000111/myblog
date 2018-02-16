@@ -45,7 +45,7 @@ export const hotPassages: PassExample[] = [
 
 
 
-export const othersPassages: PassageList[] = [
+/*export const othersPassages: PassageList[] = [
   {id: "4", title: 'Linux从入门到精通',numbers: 3, passTime: '2018-01-01'},
   {id: "4", title: 'Linux从入门到精通1',numbers: 4, passTime: '2018-01-02'},
   {id: "4", title: 'Linux从入门到精通2',numbers: 30, passTime: '2018-01-03'},
@@ -65,7 +65,7 @@ export const backendPassages: PassageList[] = [
   {id: "6", title: 'node从入门到精通2',numbers: 30, passTime: '2018-01-03'},
   {id: "6", title: 'node从入门到精通3',numbers: 300, passTime: '2018-01-04'},
   {id: "6", title: 'node从入门到精通4',numbers: 3000, passTime: '2018-01-05'}
-];
+];*/
 
 export const navLinks: NavRoute[] = [
   {label: '首页', name: 'Root', path: '', component: MainPageComponent},

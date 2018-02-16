@@ -1,22 +1,22 @@
 <div class="login">
-  <form  [formGroup]="formModel" (submit)="onSubmit()" >
+  <form  [formGroup]="formModel">
     <section>
       <input formControlName="name"  type="text" placeholder="用户名/邮箱:">
       <div [hidden]="formModel.get('name').valid || formModel.get('name').untouched ">
-        <div [hidden]="!formModel.hasError('required','name')" class="warn">帐号不能为空!</div>
+        <div [hidden]="!formModel.hasError('required',['name'])" class="warn">帐号不能为空!</div>
       </div>
     </section>
     <section>
       <input formControlName="password" type="password" placeholder="密码:">
       <div [hidden]="formModel.get('password').valid || formModel.get('password').untouched ">
-        <div [hidden]="!formModel.hasError('required','password')" class="warn">密码不能为空!</div>
+        <div [hidden]="!formModel.hasError('required',['password'])" class="warn">密码不能为空!</div>
       </div>
     </section>
     <section>
       <p><span><a>忘记密码?</a></span><span> => <a (click)="isLogup($event)">去注册</a></span></p>
     </section>
     <section>
-      <button type="submit">登录</button>
+      <button type="button" (click)="isLogin()">登录</button>
     </section>
 </form>
 </div>

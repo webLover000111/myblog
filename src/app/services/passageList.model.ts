@@ -1,5 +1,5 @@
 export interface PassageList {
-  id: string;
+  id: number;
   title: string;
   numbers: number;
   passTime: string;

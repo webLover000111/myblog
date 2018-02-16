@@ -29,7 +29,7 @@
   display: block;
   float: left;
   margin: 16px 16px 0 0;
-  height: 54px;
+  height: 50px;
   width: 420px;
   border: #96c4ff 1px solid;
   box-shadow: #a49ca8 2px 2px;
@@ -46,9 +46,9 @@
   min-width: 40px;
   margin: 0 8px 8px 0;
   float: right;
-  height: 24px;
+  height: 16px;
   font-size: 10px;
-  line-height: 24px;
+  line-height: 16px;
   text-align: center;
   color: #625c63;
 }
@@ -67,5 +67,14 @@
 }
 .sort span{
   padding: 0 0 0 4px;
+  vertical-align: middle;
+}
+.wrap img{
+  height: 16px;
+  width:16px;
+  padding: 0 0 0 0;
+  vertical-align: middle;
+}
+.numbers{
   vertical-align: middle;
 }

@@ -3,7 +3,7 @@
   <div class="clearfix"></div>
   <ul>
     <li *ngFor="let item of items" (click)="goToPassage(item.id)"><p>{{item.title}}</p>
-    <span>{{item.numbers}}</span><span>Release: {{item.passTime}}</span>
+    <span class="wrap"><img src="../../assets/images/eyes.png" alt="eyes"><span class="numbers">{{item.numbers}}</span></span><span>Release: {{item.passTime}}</span>
     </li>
   </ul>
   <div class="clearfix"></div>

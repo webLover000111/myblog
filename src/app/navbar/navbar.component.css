@@ -33,7 +33,7 @@
 .navUl li:last-child{
   float:right;
 }
-#login:hover ,#logup:hover{
+#login:hover ,#logup:hover, #logout:hover{
   text-decoration: underline;
   cursor: pointer;
   color: #333;

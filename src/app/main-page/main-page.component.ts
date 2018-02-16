@@ -16,7 +16,6 @@ export class MainPageComponent implements OnInit {
   dataSource: Observable<any>;
   newPassages: PassExample[];
   hotPassages: PassExample[];
-  
   constructor(
     private http: Http, public passages: IndexPassagesService) {
       /*console.log(passages.getUrl());*/

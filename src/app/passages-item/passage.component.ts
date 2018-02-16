@@ -9,7 +9,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 export class PassageComponent implements OnInit {
   @Input('item') item: PassExample;
   constructor(private router: Router, private route: ActivatedRoute) { }
-  goToPassage(id: string): void {
+  goToPassage(id: number): void {
     this.router.navigate(['passages', id], {relativeTo: this.route});
   }
   ngOnInit() {

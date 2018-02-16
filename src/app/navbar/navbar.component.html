@@ -1,6 +1,6 @@
 <div class="nav">
   <ul class="navUl">
     <li *ngFor="let item of items  let i = index"><a [routerLink]="item.path" [ngClass]="{ active: isActive(i) }">{{item.label}}</a></li>
-    <li><span (click)="logClick($event)" id="login">登录</span>/<span (click)="logClick($event)" id="logup">注册</span></li>
+    <li><span (click)="logClick($event)" id="login" [hidden] = "isLogin">登录/</span><span (click)="logClick($event)" id="logup" [hidden] = "isLogin">注册</span><span [hidden]="!isLogin">已登录/</span><span id="logout" [hidden]="!isLogin" (click)="logout()">登出</span></li>
 </ul>
 </div>

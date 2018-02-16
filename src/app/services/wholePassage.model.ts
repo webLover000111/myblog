@@ -1,9 +1,9 @@
 export interface WholePassage{
-  id: string;
+  id: number;
   title: string;
   statement: string;
   content: string;
   numbers: number;
   passTime: string;
-  comments: object;
+  comments?: object;
 }
