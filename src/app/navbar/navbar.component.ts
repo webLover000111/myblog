@@ -14,7 +14,8 @@ import {Http} from '@angular/http';
 })
 export class NavbarComponent implements OnInit {
   isLogin: boolean = false;
-  logout$ : Observable<any>;
+  show: boolean = false;
+  logout$: Observable<any>;
   dataSource$: Observable<any>;
   @Input('items') items: NavRoute[];
   @Output() userLog: EventEmitter<string> = new EventEmitter();

@@ -1,12 +1,3 @@
-#search{
-  margin: 20px auto 0 auto;
-  width:340px;
-  height:auto;
-}
-#wrapInput{
-  margin: 0 auto 0 auto;
-  width: auto;
-}
 #search input{
   padding: 0 48px 0 8px;
   display: inline-block;
@@ -34,4 +25,25 @@
 #search button:hover{
   cursor: pointer;
   background: url('../../assets/images/searchHover.png') no-repeat;
+}
+@media screen and (max-width: 768px){
+  #search{
+    width:340px;
+    height:auto;
+    margin: 20px auto 0 auto;
+  }
+  #wrapInput{
+    width: 322px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px){
+  #search{
+    width:340px;
+    margin: 20px auto 0 auto;
+  }
+  #wrapInput{
+    width: 340px;
+    margin: 0 auto;
+  }
 }

@@ -12,11 +12,17 @@
   border-radius: 8px 15px 15px 8px;
   box-shadow: #eee 3px 3px;
   background: #558eff;
-  margin: 20px 0 0 0;
 }
 .clearfix{
   clear:both;
 }
-app-passages-item{
-  float: left;
+@media screen and (max-width: 768px){
+  .itemTitle{
+    margin: 20px 0 0 20px;
+  }
+}
+@media screen and (min-width: 768px){
+  .itemTitle{
+    margin: 20px 0 0 0;
+  }
 }

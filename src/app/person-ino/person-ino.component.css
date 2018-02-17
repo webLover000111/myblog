@@ -24,3 +24,8 @@
   word-break: break-all;
   word-wrap:break-word;
 }
+@media screen and (max-width: 768px){
+  .personIno{
+    margin: 0 auto;
+  }
+}

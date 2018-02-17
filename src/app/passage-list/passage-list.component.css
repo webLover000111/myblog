@@ -10,13 +10,9 @@
 }
 .passageList .sort{
   display: block;
-  float: left;
-  height: 30px;
-  width: 70px;
   font-size: 16px;
   line-height: 40px;
   text-align: center;
-  margin: 20px 0 0 20px;
 }
 .passageList ul{
   list-style: none;
@@ -77,4 +73,41 @@
 }
 .numbers{
   vertical-align: middle;
+}
+
+@media screen and (max-width: 768px){
+  .passageList .sort{
+    float: left;
+    height: 30px;
+    width: 70px;
+    margin: 20px 0 0 20px;
+  }
+  .passageList li{
+    float: none;
+    height: 50px;
+    width: 360px;
+    margin: 16px auto 0 auto;
+    border: #96c4ff 1px solid;
+    box-shadow: #a49ca8 0 2px;
+  }
+
+
+}
+@media screen and (min-width: 768px){
+  .passageList .sort{
+    float: left;
+    height: 30px;
+    width: 70px;
+    margin: 20px 0 0 20px;
+  }
+  .passageList li{
+    float: left;
+    margin: 16px 16px 0 0;
+    height: 50px;
+    max-width: 420px;
+    min-width: 400px;
+    width: auto;
+    border: #96c4ff 1px solid;
+    box-shadow: #a49ca8 2px 2px;
+  }
 }
