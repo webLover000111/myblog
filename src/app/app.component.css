@@ -22,7 +22,7 @@
   #right{
     float: right;
     width:calc(100vw - 400px);
-    min-width: 400px;
+    min-width: 600px;
   }
   #left{
     margin: 20px 20px 0 20px;

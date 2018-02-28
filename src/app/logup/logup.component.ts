@@ -57,7 +57,7 @@ export class LogupComponent implements OnInit {
              alert(data.msg);
              window.location.reload();
            }
-           else{
+           else {
              window.location.href = '/';
            }
         },
@@ -67,7 +67,10 @@ export class LogupComponent implements OnInit {
       );
     }
     else if( !this.formModel.get('check').valid ){
-      alert("必须同意服务协议才可以注册!");
+      alert( '必须同意服务协议才可以注册!');
+    }
+    else{
+      alert('表单没有填完整!');
     }
   }
   handleError (error: Response | any){

@@ -22,10 +22,12 @@ import {APP_BASE_HREF, HashLocationStrategy, LocationStrategy} from '@angular/co
 import {HttpModule} from '@angular/http';
 import {FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { PassageListComponent } from './passage-list/passage-list.component';
-import {PassageList} from './services/passageList.model';
 import { UserLogComponent } from './user-log/user-log.component';
 import { LoginComponent } from './login/login.component';
 import { LogupComponent } from './logup/logup.component';
+import { CommentReleaseComponent } from './comment-release/comment-release.component';
+import { CommentListComponent } from './comment-list/comment-list.component';
+import { ReplyComponent } from './reply/reply.component';
 
 // import {
 //   routes as childRoutes,
@@ -119,7 +121,10 @@ const routes: Routes = [
     PassageListComponent,
     UserLogComponent,
     LoginComponent,
-    LogupComponent
+    LogupComponent,
+    CommentReleaseComponent,
+    CommentListComponent,
+    ReplyComponent
   ],
   imports: [
     FormsModule,
