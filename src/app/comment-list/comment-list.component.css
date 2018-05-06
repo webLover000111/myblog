@@ -1,0 +1,84 @@
+.commentList{
+  height: auto;
+  min-height: 70px;
+  width: 100%;
+}
+
+.comWrap{
+  display: inline-block;
+  width: auto;
+  height: 30px;
+  margin: 20px 0 0 0
+}
+
+.comWrap img{
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+
+}
+.comWrap .userName{
+  padding-left: 10px;
+  line-height: 16px;
+  font-size: 16px;
+  color: #858585;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.commentText{
+  word-break: break-all;
+  font-size: 16px;
+  color: #222;
+}
+.seeReply{
+  margin: 10px 20px 10px 10px;
+  font-size: 12px;
+  color: #696969;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.seeReply:hover{
+  background: #adacff;
+  color:#696969;
+  text-decoration: underline;
+}
+.thumbup img, .thumbdown img{
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.nums{
+  display: inline-block;
+  width: 40px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+.inform img{
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.theTime{
+  font-size: 10px;
+  line-height: 14px;
+  color: #c4c4c4;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .commentList{
+    padding: 0 6px;
+    box-sizing: border-box;
+  }
+}

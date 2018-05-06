@@ -1,0 +1,42 @@
+.release{
+  width: 100%;
+  height: auto;
+}
+.text{
+  height:100px;
+  width: 500px;
+  margin: 20px auto 40px;
+}
+.text textarea{
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  padding: 10px 8px;
+  resize: none;
+}
+.btn{
+  display: block;
+  height: 30px;
+  min-width: 50px;
+  width: auto;
+  margin: 20px auto;
+  border: none;
+
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 30px;
+  color: #222;
+  background: #7aff42;
+}
+.btn:hover{
+  color: #f3f3f3;
+  background: #8eaeff;
+}
+@media screen and (max-width: 768px){
+  .text{
+    height:100px;
+    width: 340px;
+    margin: 20px auto 40px;
+  }
+}

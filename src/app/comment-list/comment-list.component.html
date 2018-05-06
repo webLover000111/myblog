@@ -1,0 +1,7 @@
+<div class="commentList" *ngFor="let comment of comments; let i=index">
+<hr>
+  <span class="comWrap"><img src="../../assets/userHeadshot/default.jpg" alt="headshot"><span class="userName">{{comment.userName}}</span></span>
+  <p class="commentText">{{comment.content}}</p>
+  <p><span class="theTime">{{comment.passTime}}</span><span class="seeReply" (click)="toogle($event,i)" *ngIf="comment.reply.toString()">查看回复</span><span class="thumbup"><img src="../../assets/images/nothumbup.png" alt="thumbup" (click)="thumbup($event, i)"><span class="nums">{{comment.thumbup}}</span></span><span class="thumbdown"><img [src]="thumbdownPic" alt="thumbdown" (click)="thumbdown($event, i)"><span class="nums">{{comment.thumbdown}}</span></span><span class="inform"><img src="../../assets/images/inform.png" alt=""></span></p>
+  <app-reply [hidden]="!show" [items]="comment.reply"></app-reply>
+</div>

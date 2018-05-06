@@ -1,0 +1,70 @@
+.reply{
+  height: auto;
+  min-height: 70px;
+  width: auto;
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+.comWrap{
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  margin: 20px 0 0 0
+}
+
+.comWrap img{
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+
+}
+.comWrap .replyUserName, .comWrap .repliedName{
+  padding-left: 10px;
+  line-height: 16px;
+  font-size: 16px;
+  color: #858585;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.comWrap strong{
+  padding-left: 10px;
+}
+.commentText{
+  word-break: break-all;
+  font-size: 16px;
+  color: #222;
+}
+.thumbup img, .thumbdown img{
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.nums{
+  display: inline-block;
+  width: 40px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+.inform img{
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.theTime{
+  font-size: 10px;
+  line-height: 14px;
+  color: #c4c4c4;
+  margin-right: 30px;
+}

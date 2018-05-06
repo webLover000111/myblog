@@ -1,0 +1,5 @@
+<div class="reply" *ngFor="let item of items; let i = index" >
+  <span class="comWrap"><img src="../../assets/userHeadshot/default.jpg" alt="replyHeadshot"><span class="replyUserName">{{item.replyer}}</span><strong>to</strong><span class="repliedName">{{item.replied}}</span></span>
+  <p class="commentText">{{item.content}}</p>
+  <p><span class="theTime">{{item.passTime}}</span><span class="thumbup"><img [src]="thumbupPic" alt="thumbup" (click)="thumbup($event, i)"><span class="nums">{{item.thumbup}}</span></span><span class="thumbdown"><img [src]="thumbdownPic" alt="thumbdown" (click)="thumbdown($event, i)"><span class="nums">{{item.thumbdown}}</span></span><span class="inform"><img src="../../assets/images/inform.png" alt=""></span></p>
+</div>
